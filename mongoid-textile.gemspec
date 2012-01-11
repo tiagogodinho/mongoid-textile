@@ -4,8 +4,8 @@ require File.expand_path('../lib/mongoid-textile/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Tiago Rafael Godinho"]
   gem.email         = ["tiagogodinho3@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Textile texts directly from MongoDB.}
+  gem.summary       = %q{Mongoid Textile caches Textile texts on MongoDB to eliminate reprocessing.}
   gem.homepage      = ""
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
