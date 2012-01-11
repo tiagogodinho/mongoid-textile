@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "mongoid-textile"
   gem.require_paths = ["lib"]
   gem.version       = Mongoid::Textile::VERSION
+  
+  gem.add_development_dependency 'rspec', '2.8.0'
 end
