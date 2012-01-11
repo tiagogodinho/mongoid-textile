@@ -1,6 +1,8 @@
 # Mongoid::Textile
 
-TODO: Write a gem description
+Textile texts directly from MongoDB.
+
+Mongoid Textile caches Textile texts on MongoDB to eliminate reprocessing.
 
 ## Installation
 
@@ -18,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+``` ruby
+class Article
+  include Mongoid::Document
+  
+  field :text
+  
+  textilize :text
+end
+
+article = Article.create(text: 'h1. Proud to be a rails developer')
+
+article.text_formatted #=> <h1>Proud to be a rails developer</h1>
+```
 
 ## Contributing
 
@@ -27,3 +41,7 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## License
+
+MIT License. Copyright 2012 Tiago Rafael Godinho
