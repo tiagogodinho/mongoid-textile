@@ -14,7 +14,7 @@ class Article
 end
 
 describe Mongoid::Textile do
-  let(:article) { Article.create(text: 'h1. proud to be a rails developer') }
+  let(:article) { Article.create(:text => 'h1. proud to be a rails developer') }
   
   it 'should build a dynamic field for textilized fields' do
     article.should respond_to(:text_formatted)
