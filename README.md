@@ -26,7 +26,7 @@ class Article
   
   field :text
   
-  textilize :text
+  textlize :text
 end
 
 article = Article.create(text: 'h1. Proud to be a rails developer')
