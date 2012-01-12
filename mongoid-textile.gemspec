@@ -2,8 +2,8 @@
 require File.expand_path('../lib/mongoid-textile/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Tiago Rafael Godinho"]
-  gem.email         = ["tiagogodinho3@gmail.com"]
+  gem.authors       = ["Lucas Renan", "Tiago Rafael Godinho"]
+  gem.email         = ["contato@lucasrenan.com", "tiagogodinho3@gmail.com"]
   gem.description   = %q{Textile texts directly from MongoDB.}
   gem.summary       = %q{Mongoid Textile caches Textile texts on MongoDB to eliminate reprocessing.}
   gem.homepage      = ""

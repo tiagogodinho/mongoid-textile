@@ -42,6 +42,11 @@ article.text_formatted #=> <h1>Proud to be a rails developer</h1>
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+## Maintainers
+
+* Lucas Renan (https://github.com/lucasrenan)
+* Tiago Rafael Godinho (https://github.com/tiagogodinho)
+
 ## License
 
-MIT License. Copyright 2012 Tiago Rafael Godinho
+MIT License. Copyright 2012 Lucas Renan e Tiago Rafael Godinho
