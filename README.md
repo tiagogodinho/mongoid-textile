@@ -23,6 +23,7 @@ Or install it yourself as:
 ``` ruby
 class Article
   include Mongoid::Document
+  include Mongoid::Textile
   
   field :text
   
