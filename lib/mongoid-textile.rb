@@ -1,7 +1,7 @@
 require "mongoid-textile/version"
-require 'active_support/concern'
-require 'mongoid'
-require 'redcloth'
+require "active_support/concern"
+require "mongoid"
+require "redcloth"
 
 module Mongoid
   module Textile
