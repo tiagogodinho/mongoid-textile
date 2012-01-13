@@ -26,4 +26,20 @@ describe Mongoid::Textile do
 
     article.text_formatted.should eq("<p>ruby makes me happy</p>")
   end
+  
+  context "when text is nil" do
+    let(:article) { Article.create(:text => nil) }
+    
+    it "should set formatted field with an empty string" do
+      article.text_formatted.should eq("")
+    end
+  end
+  
+  context "when text is empty" do
+    let(:article) { Article.create(:text => "") }
+    
+    it "should set formatted field with an empty string" do
+      article.text_formatted.should eq("")
+    end
+  end
 end
