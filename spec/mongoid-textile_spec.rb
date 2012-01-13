@@ -1,9 +1,5 @@
 require 'spec_helper'
 
-Mongoid.configure do |config|
-  config.master = Mongo::Connection.new.db('mongoid-textile')
-end
-
 class Article
   include Mongoid::Document
   include Mongoid::Textile
