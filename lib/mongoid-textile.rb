@@ -12,17 +12,24 @@ module Mongoid
     end
     
     def textile_to_html
-      textile_fields = fields.collect{|f| f.first}.select{|f| f =~ /\w+_formatted/}
-      textile_fields.each do |f|
-        value = self.send(f.split(/(\w+)_formatted/).reject(&:blank?).first).nil? ? "" : self.send(f.split(/(\w+)_formatted/).reject(&:blank?).first)
-        self.send "#{f}=".to_sym, RedCloth.new(value).to_html
+      textile_fields.each do |textile_field_name|
+        field_name = textile_field_name.gsub(/_formatted/, '')
+        value = self.send(field_name)
+        formatted_text = RedCloth.new(value.to_s).to_html
+        self.send("#{textile_field_name}=", formatted_text)
       end
+    end
+    
+    private
+    
+    def textile_fields
+      fields.collect{ |field| field.first }.select{ |field_name| field_name =~ /\w+_formatted/ }
     end
     
     module ClassMethods
       def textlize(*fields)
-        fields.each do |f|
-          field("#{f}_formatted")
+        fields.each do |field_name|
+          field("#{field_name}_formatted")
         end
       end
     end
