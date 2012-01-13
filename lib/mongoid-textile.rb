@@ -11,13 +11,11 @@ module Mongoid
       before_save :textile_to_html
     end
     
-    module InstanceMethods
-      def textile_to_html
-        textile_fields = fields.collect{|f| f.first}.select{|f| f =~ /\w+_formatted/}
-        textile_fields.each do |f|
-          value = self.send(f.split(/(\w+)_formatted/).reject(&:blank?).first).nil? ? "" : self.send(f.split(/(\w+)_formatted/).reject(&:blank?).first)
-          self.send "#{f}=".to_sym, RedCloth.new(value).to_html
-        end
+    def textile_to_html
+      textile_fields = fields.collect{|f| f.first}.select{|f| f =~ /\w+_formatted/}
+      textile_fields.each do |f|
+        value = self.send(f.split(/(\w+)_formatted/).reject(&:blank?).first).nil? ? "" : self.send(f.split(/(\w+)_formatted/).reject(&:blank?).first)
+        self.send "#{f}=".to_sym, RedCloth.new(value).to_html
       end
     end
     
