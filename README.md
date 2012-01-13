@@ -1,4 +1,4 @@
-# Mongoid::Textile [![Build Status](https://secure.travis-ci.org/tiagogodinho/mongoid-textile.png)](http://travis-ci.org/tiagogodinho/mongoid-textile)
+# Mongoid::Textile [![Build Status](https://secure.travis-ci.org/tiagogodinho/mongoid-textile.png)](http://travis-ci.org/tiagogodinho/mongoid-textile) [![Build Status](https://gemnasium.com/tiagogodinho/mongoid-textile.png?travis)](http://gemnasium.com/tiagogodinho/mongoid-textile)
 
 Textile texts directly from MongoDB.
 
