@@ -14,9 +14,22 @@ module Mongoid
     def textile_to_html
       textile_fields.each do |textile_field_name|
         field_name = textile_field_name.gsub(/_formatted/, '')
-        value = self.send(field_name)
-        formatted_text = RedCloth.new(value.to_s).to_html
-        self.send("#{textile_field_name}=", formatted_text)
+        
+        if self.fields[field_name.to_s].localized?
+          values = self.send("#{field_name}_translations")
+          
+          formatted_text = {}
+          
+          values.each do |key, value|
+            formatted_text[key.to_s] = RedCloth.new(value.to_s).to_html
+          end
+          
+          self.send("#{textile_field_name}_translations=", formatted_text)
+        else
+          value = self.send(field_name)
+          formatted_text = RedCloth.new(value.to_s).to_html
+          self.send("#{textile_field_name}=", formatted_text)
+        end
       end
     end
     
@@ -29,7 +42,11 @@ module Mongoid
     module ClassMethods
       def textlize(*fields)
         fields.each do |field_name|
-          field("#{field_name}_formatted")
+          if self.fields[field_name.to_s].localized?
+            field("#{field_name}_formatted", :localize => true)
+          else
+            field("#{field_name}_formatted")
+          end
         end
       end
     end
