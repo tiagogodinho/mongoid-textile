@@ -1,3 +1,9 @@
+## 0.1.0 - February 14, 2012
+
+### Improvements
+
+* Inclusion of support for localized fields.
+
 ## 0.0.2 - January 17, 2012
 
 ### Improvements
