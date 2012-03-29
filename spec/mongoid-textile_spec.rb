@@ -45,6 +45,15 @@ describe Mongoid::Textile do
       article.text_formatted.should eq("")
     end
   end
+
+  context "when text is localized and is not present" do
+    let(:post) { Post.create }
+
+    it "should set formatted translations field with an empty hash" do
+      post.text_formatted_translations.should eq({})
+      post.text_formatted.should eq(nil)
+    end
+  end
   
   context "when text is empty" do
     let(:article) { Article.create(:text => "") }

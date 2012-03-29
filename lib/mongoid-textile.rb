@@ -16,8 +16,7 @@ module Mongoid
         field_name = textile_field_name.gsub(/_formatted/, '')
         
         if self.fields[field_name.to_s].localized?
-          values = self.send("#{field_name}_translations")
-          
+          values = self.send("#{field_name}_translations") || {}
           formatted_text = {}
           
           values.each do |key, value|
@@ -50,5 +49,6 @@ module Mongoid
         end
       end
     end
+
   end
 end

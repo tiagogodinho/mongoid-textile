@@ -14,8 +14,8 @@ RSpec.configure do |config|
 
   config.before :suite do
   	Mongoid.configure do |config|
-	  config.master = Mongo::Connection.new.db("mongoid-textile")
-	end
+  	  config.master = Mongo::Connection.new.db("mongoid-textile")
+  	end
   end
 
   config.after :each do
