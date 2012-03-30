@@ -1,3 +1,9 @@
+## 0.1.1
+
+### Resolved Issues
+
+* Sets an empty hash to formatted translations field when field is localized and empty. @lucasrenan 3ae3e981d108013350988b659873f857a5beafcd
+
 ## 0.1.0 - February 14, 2012
 
 ### Improvements
