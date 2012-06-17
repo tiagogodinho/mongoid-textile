@@ -4,5 +4,5 @@ rvm:
   - ruby-head
 
 gemfile:
-  - gemfiles/mongoid-2.4.gemfile
+  - Gemfile
   - gemfiles/mongoid-3.0.gemfile
