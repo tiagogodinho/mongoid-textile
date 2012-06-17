@@ -5,3 +5,7 @@ rvm:
   - ruby-head
   - ree
   - rbx-18mode
+
+gemfile:
+  - gemfiles/mongoid-2.4.gemfile
+  - gemfiles/mongoid-3.0.gemfile
