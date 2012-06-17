@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'mongoid',  '~> 3.0.0.rc'
+gem 'mongoid', '~> 3.0.0.rc'
+
+gem 'database_cleaner', '~> 0.8'
 
 gemspec :path => '../'
