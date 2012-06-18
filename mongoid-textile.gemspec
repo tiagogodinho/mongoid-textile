@@ -21,6 +21,6 @@ Gem::Specification.new do |gem|
   
   gem.add_development_dependency 'bson_ext', '~> 1.6.1'
   gem.add_development_dependency 'database_cleaner', '~> 0.8'
-  gem.add_development_dependency 'rspec', '~> 2.9.0'
+  gem.add_development_dependency 'rspec', '~> 2.9'
   gem.add_development_dependency 'rake', '~> 0.9.2'
 end
