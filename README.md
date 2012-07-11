@@ -35,6 +35,10 @@ article = Article.create(text: 'h1. Proud to be a rails developer')
 article.text_formatted #=> <h1>Proud to be a rails developer</h1>
 ```
 
+## Compatibility
+
+Mongoid Textile is tested against Ruby 1.9.3.
+
 ## Contributing
 
 1. Fork it
