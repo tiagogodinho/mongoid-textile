@@ -1,3 +1,13 @@
+## 0.2.0
+
+### Improvements
+
+* Adding support to Mongoid 3.
+
+### Major Changes (Backwards Incompatible)
+
+* Mongoid Textile no longer supports Ruby 1.8.7 and 1.9.2 (if you use Mongoid 3).
+
 ## 0.1.1 - March 30, 2012
 
 ### Resolved Issues
