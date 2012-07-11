@@ -7,9 +7,9 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Mongoid Textile caches Textile texts on MongoDB to eliminate reprocessing.}
   gem.homepage      = ''
 
-  gem.executables   = `git ls-files -- bin/*`.split('\n').map{ |f| File.basename(f) }
-  gem.files         = `git ls-files`.split('\n')
-  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split('\n')
+  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  gem.files         = `git ls-files`.split("\n")
+  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = 'mongoid-textile'
   gem.require_paths = ['lib']
   gem.version       = Mongoid::Textile::VERSION
