@@ -42,7 +42,7 @@ module Mongoid
       def textlize(*fields)
         fields.each do |field_name|
           if self.fields[field_name.to_s].localized?
-            field("#{field_name}_formatted", :localize => true)
+            field("#{field_name}_formatted", localize: true)
           else
             field("#{field_name}_formatted")
           end

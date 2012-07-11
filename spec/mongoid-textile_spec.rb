@@ -15,13 +15,13 @@ class Post
   include Mongoid::Document
   include Mongoid::Textile
 
-  field :text, :localize => true
+  field :text, localize: true
 
   textlize :text
 end
 
 describe Mongoid::Textile do
-  let(:article) { Article.create(:text => "h1. proud to be a rails developer") }
+  let(:article) { Article.create(text: "h1. proud to be a rails developer") }
 
   it "should build a dynamic field for textilized fields" do
     article.should respond_to(:text_formatted)
@@ -39,7 +39,7 @@ describe Mongoid::Textile do
   end
 
   context "when text is nil" do
-    let(:article) { Article.create(:text => nil) }
+    let(:article) { Article.create(text: nil) }
 
     it "should set formatted field with an empty string" do
       article.text_formatted.should eq("")
@@ -56,7 +56,7 @@ describe Mongoid::Textile do
   end
 
   context "when text is empty" do
-    let(:article) { Article.create(:text => "") }
+    let(:article) { Article.create(text: "") }
 
     it "should set formatted field with an empty string" do
       article.text_formatted.should eq("")
@@ -64,7 +64,7 @@ describe Mongoid::Textile do
   end
 
   context 'multiple languages' do
-    let(:post) { Post.create(:text_translations => { 'en' => 'h1. ruby makes me happy', 'de' => 'h1. ruby macht mich glücklich' }) }
+    let(:post) { Post.create(text_translations: { en: 'h1. ruby makes me happy', de: 'h1. ruby macht mich glücklich' }) }
 
     context 'in english' do
       before :all do
