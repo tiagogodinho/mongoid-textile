@@ -15,10 +15,10 @@ Gem::Specification.new do |gem|
   gem.name          = "mongoid-textile"
   gem.require_paths = ["lib"]
   gem.version       = Mongoid::Textile::VERSION
-  
+
   gem.add_dependency 'mongoid',  '>= 2.4'
   gem.add_dependency 'RedCloth', '~> 4.2.0'
-  
+
   gem.add_development_dependency 'database_cleaner', '~> 0.8'
   gem.add_development_dependency 'rspec', '~> 2.9'
   gem.add_development_dependency 'rake', '~> 0.9.2'
