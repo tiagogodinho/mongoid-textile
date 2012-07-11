@@ -3,4 +3,4 @@ rvm:
 
 gemfile:
   - Gemfile
-  - gemfiles/mongoid-3.0.gemfile
+  - gemfiles/mongoid-2.4.gemfile
