@@ -12,7 +12,7 @@
 
 ### Resolved Issues
 
-* Sets an empty hash to formatted translations field when field is localized and empty. [@lucasrenan][] [3ae3e981d108013350988b659873f857a5beafcd][]
+* Sets an empty hash to formatted translations field when field is localized and empty. ([@lucasrenan][]) commit: [3ae3e981d1][]
 
 ## 0.1.0 - February 14, 2012
 
@@ -29,3 +29,6 @@
 ## 0.0.1 - January 11, 2012
 
 Initial release.
+
+[3ae3e981d1]: https://github.com/tiagogodinho/mongoid-textile/commit/3ae3e981d108013350988b659873f857a5beafcd
+[@lucasrenan]: https://github.com/lucasrenan
