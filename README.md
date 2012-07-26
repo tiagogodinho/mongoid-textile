@@ -1,4 +1,4 @@
-# Mongoid::Textile [![Build Status](https://secure.travis-ci.org/tiagogodinho/mongoid-textile.png)](http://travis-ci.org/tiagogodinho/mongoid-textile) [![Build Status](https://gemnasium.com/tiagogodinho/mongoid-textile.png)](http://gemnasium.com/tiagogodinho/mongoid-textile)
+# Mongoid Textile [![Build Status](https://secure.travis-ci.org/tiagogodinho/mongoid-textile.png)](http://travis-ci.org/tiagogodinho/mongoid-textile) [![Build Status](https://gemnasium.com/tiagogodinho/mongoid-textile.png)](http://gemnasium.com/tiagogodinho/mongoid-textile)
 
 Textile texts directly from MongoDB.
 
@@ -6,17 +6,23 @@ Mongoid Textile caches Textile texts on MongoDB to eliminate reprocessing.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's `Gemfile`:
 
-    gem 'mongoid-textile'
+``` ruby
+gem 'mongoid-textile'
+```
 
 And then execute:
 
-    $ bundle
+``` terminal
+bundle
+```
 
 Or install it yourself as:
 
-    $ gem install mongoid-textile
+``` terminal
+gem install mongoid-textile
+```
 
 ## Usage
 
@@ -50,7 +56,7 @@ Mongoid Textile is tested against Ruby 1.9.3.
 ## Maintainers
 
 * Lucas Renan (https://github.com/lucasrenan)
-* Tiago Rafael Godinho (https://github.com/tiagogodinho)
+* Tiago Godinho (https://github.com/tiagogodinho)
 
 ## License
 
