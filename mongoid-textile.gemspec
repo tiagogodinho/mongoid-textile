@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'mongoid',  '>= 2.4'
   gem.add_dependency 'RedCloth', '~> 4.2.0'
 
-  gem.add_development_dependency 'database_cleaner', '~> 0.8'
-  gem.add_development_dependency 'rspec',            '~> 2.9'
-  gem.add_development_dependency 'rake',             '~> 0.9.2'
+  gem.add_development_dependency 'database_cleaner', '~> 0.9.1'
+  gem.add_development_dependency 'rspec',            '~> 2.13.0'
+  gem.add_development_dependency 'rake',             '~> 10.0.4'
 end
