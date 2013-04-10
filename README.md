@@ -1,4 +1,4 @@
-# Mongoid Textile [![Build Status](https://secure.travis-ci.org/tiagogodinho/mongoid-textile.png)](http://travis-ci.org/tiagogodinho/mongoid-textile) [![Build Status](https://gemnasium.com/tiagogodinho/mongoid-textile.png)](http://gemnasium.com/tiagogodinho/mongoid-textile)
+# Mongoid Textile [![Build Status](https://secure.travis-ci.org/tiagogodinho/mongoid-textile.png)](http://travis-ci.org/tiagogodinho/mongoid-textile) [![Build Status](https://gemnasium.com/tiagogodinho/mongoid-textile.png)](http://gemnasium.com/tiagogodinho/mongoid-textile) [![Code Climate](https://codeclimate.com/github/tiagogodinho/mongoid-textile.png)](https://codeclimate.com/github/tiagogodinho/mongoid-textile)
 
 Textile texts directly from MongoDB.
 
@@ -30,9 +30,9 @@ gem install mongoid-textile
 class Article
   include Mongoid::Document
   include Mongoid::Textile
-  
+
   field :text
-  
+
   textlize :text
 end
 
