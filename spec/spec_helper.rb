@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 require 'mongoid-textile'
 require 'database_cleaner'
 
