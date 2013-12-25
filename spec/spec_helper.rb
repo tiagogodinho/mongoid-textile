@@ -4,6 +4,8 @@ Coveralls.wear!
 require 'mongoid-textile'
 require 'database_cleaner'
 
+I18n.config.enforce_available_locales = false
+
 RSpec.configure do |config|
   config.before(:suite) do
     if Mongoid.respond_to? :connect_to
