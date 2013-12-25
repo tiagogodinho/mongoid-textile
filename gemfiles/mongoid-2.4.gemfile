@@ -5,5 +5,3 @@ gem 'mongoid', '~> 2.4'
 gem 'bson_ext', '~> 1.6.0'
 
 gemspec path: '../'
-
-gem "coveralls", require: false
