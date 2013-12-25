@@ -1,4 +1,6 @@
-# Mongoid Textile [![Build Status](https://secure.travis-ci.org/tiagogodinho/mongoid-textile.png)](http://travis-ci.org/tiagogodinho/mongoid-textile) [![Build Status](https://gemnasium.com/tiagogodinho/mongoid-textile.png)](http://gemnasium.com/tiagogodinho/mongoid-textile) [![Code Climate](https://codeclimate.com/github/tiagogodinho/mongoid-textile.png)](https://codeclimate.com/github/tiagogodinho/mongoid-textile) [![Coverage Status](https://coveralls.io/repos/tiagogodinho/mongoid-textile/badge.png?branch=master)](https://coveralls.io/r/tiagogodinho/mongoid-textile)
+# Mongoid Textile [![Build Status](https://secure.travis-ci.org/tiagogodinho/mongoid-textile.png)](http://travis-ci.org/tiagogodinho/mongoid-textile) [![Build Status](https://gemnasium.com/tiagogodinho/mongoid-textile.png)](http://gemnasium.com/tiagogodinho/mongoid-textile) [![Gem Version](https://badge.fury.io/rb/mongoid-textile.png)](http://badge.fury.io/rb/mongoid-textile)
+
+[![Code Climate](https://codeclimate.com/github/tiagogodinho/mongoid-textile.png)](https://codeclimate.com/github/tiagogodinho/mongoid-textile)  [![Coverage Status](https://coveralls.io/repos/tiagogodinho/mongoid-textile/badge.png?branch=master)](https://coveralls.io/r/tiagogodinho/mongoid-textile)
 
 Textile texts directly from MongoDB.
 
