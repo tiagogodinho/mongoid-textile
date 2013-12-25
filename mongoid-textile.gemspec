@@ -19,6 +19,6 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'coveralls',        '~> 0.7.0'
   gem.add_development_dependency 'database_cleaner', '~> 0.9.1'
-  gem.add_development_dependency 'rspec',            '~> 2.13.0'
+  gem.add_development_dependency 'rspec',            '~> 2.14.0'
   gem.add_development_dependency 'rake',             '~> 10.1.0'
 end
