@@ -3,6 +3,8 @@ rvm:
   - 2.0.0
   - 2.1.0
 
+before_install: gem install bundler --pre
+
 gemfile:
   - Gemfile
   - gemfiles/mongoid-2.4.gemfile
