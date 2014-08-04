@@ -8,6 +8,7 @@ before_install: gem install bundler --pre
 gemfile:
   - Gemfile
   - gemfiles/mongoid-2.4.gemfile
+  - gemfiles/mongoid-3.1.gemfile
   - gemfiles/mongoid-master.gemfile
 
 services: mongodb
