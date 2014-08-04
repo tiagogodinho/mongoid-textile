@@ -24,25 +24,25 @@ describe Mongoid::Textile do
   let(:article) { Article.create(text: 'h1. proud to be a rails developer') }
 
   it 'should build a dynamic field for textilized fields' do
-    article.should respond_to(:text_formatted)
+    expect(article).to respond_to(:text_formatted)
   end
 
   it 'should set formatted field from textile to html' do
-    article.text_formatted.should eq('<h1>proud to be a rails developer</h1>')
+    expect(article.text_formatted).to eq('<h1>proud to be a rails developer</h1>')
   end
 
   it 'should change textlized text' do
     article.text = 'p. ruby makes me happy'
     article.save
 
-    article.text_formatted.should eq('<p>ruby makes me happy</p>')
+    expect(article.text_formatted).to eq('<p>ruby makes me happy</p>')
   end
 
   context 'when text is nil' do
     let(:article) { Article.create(text: nil) }
 
     it 'should set formatted field with an empty string' do
-      article.text_formatted.should eq('')
+      expect(article.text_formatted).to eq('')
     end
   end
 
@@ -50,8 +50,8 @@ describe Mongoid::Textile do
     let(:post) { Post.create }
 
     it 'should set formatted translations field with an empty hash' do
-      post.text_formatted_translations.should eq({})
-      post.text_formatted.should eq(nil)
+      expect(post.text_formatted_translations).to eq({})
+      expect(post.text_formatted).to eq(nil)
     end
   end
 
@@ -59,7 +59,7 @@ describe Mongoid::Textile do
     let(:article) { Article.create(text: '') }
 
     it 'should set formatted field with an empty string' do
-      article.text_formatted.should eq('')
+      expect(article.text_formatted).to eq('')
     end
   end
 
@@ -72,7 +72,7 @@ describe Mongoid::Textile do
       end
 
       it 'should set formatted field from textile to html' do
-        post.text_formatted.should eq('<h1>ruby makes me happy</h1>')
+        expect(post.text_formatted).to eq('<h1>ruby makes me happy</h1>')
       end
     end
 
@@ -82,7 +82,7 @@ describe Mongoid::Textile do
       end
 
       it 'should set formatted field from textile to html' do
-        post.text_formatted.should eq('<h1>ruby macht mich glücklich</h1>')
+        expect(post.text_formatted).to eq('<h1>ruby macht mich glücklich</h1>')
       end
     end
   end
