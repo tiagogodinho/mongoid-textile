@@ -1,32 +1,27 @@
-## 0.2.0 - July 11, 2012
+### 0.2.0 - July 11, 2012
 
-### Improvements
+* Improvements
+  * Adding support to Mongoid 3.
 
-* Adding support to Mongoid 3.
+* Major Changes (Backwards Incompatible)
+  * Mongoid Textile no longer supports Ruby 1.8.7 and 1.9.2 (if you use Mongoid 3).
 
-### Major Changes (Backwards Incompatible)
+### 0.1.1 - March 30, 2012
 
-* Mongoid Textile no longer supports Ruby 1.8.7 and 1.9.2 (if you use Mongoid 3).
+* Resolved Issues
+  * Sets an empty hash to formatted translations field when field is localized and empty. ([@lucasrenan][]) commit: [3ae3e981d1][]
 
-## 0.1.1 - March 30, 2012
+### 0.1.0 - February 14, 2012
 
-### Resolved Issues
+* Improvements
+  * Inclusion of support for localized fields.
 
-* Sets an empty hash to formatted translations field when field is localized and empty. ([@lucasrenan][]) commit: [3ae3e981d1][]
+### 0.0.2 - January 17, 2012
 
-## 0.1.0 - February 14, 2012
+* Improvements
+  * Removing InstanceMethods module inside of ActiveSupport::Concern because it is deprecated on ActiveSupport 3.2.0.
 
-### Improvements
-
-* Inclusion of support for localized fields.
-
-## 0.0.2 - January 17, 2012
-
-### Improvements
-
-* Removing InstanceMethods module inside of ActiveSupport::Concern because it is deprecated on ActiveSupport 3.2.0.
-
-## 0.0.1 - January 11, 2012
+### 0.0.1 - January 11, 2012
 
 Initial release.
 
