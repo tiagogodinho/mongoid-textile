@@ -1,6 +1,10 @@
-# Mongoid Textile [![Build Status](https://secure.travis-ci.org/tiagogodinho/mongoid-textile.png)](http://travis-ci.org/tiagogodinho/mongoid-textile) [![Build Status](https://gemnasium.com/tiagogodinho/mongoid-textile.png)](http://gemnasium.com/tiagogodinho/mongoid-textile) [![Gem Version](https://badge.fury.io/rb/mongoid-textile.png)](http://badge.fury.io/rb/mongoid-textile)
+# Mongoid Textile
 
-[![Code Climate](https://codeclimate.com/github/tiagogodinho/mongoid-textile.png)](https://codeclimate.com/github/tiagogodinho/mongoid-textile)  [![Coverage Status](https://coveralls.io/repos/tiagogodinho/mongoid-textile/badge.png?branch=master)](https://coveralls.io/r/tiagogodinho/mongoid-textile)
+[![Build Status](https://travis-ci.org/tiagogodinho/mongoid-textile.svg?branch=master)](https://travis-ci.org/tiagogodinho/mongoid-textile)
+[![Dependency Status](https://gemnasium.com/tiagogodinho/mongoid-textile.svg)](https://gemnasium.com/tiagogodinho/mongoid-textile)
+[![Gem Version](https://badge.fury.io/rb/mongoid-textile.svg)](http://badge.fury.io/rb/mongoid-textile)
+[![Coverage Status](https://img.shields.io/coveralls/tiagogodinho/mongoid-textile.svg)](https://coveralls.io/r/tiagogodinho/mongoid-textile?branch=master)
+[![Code Climate](https://codeclimate.com/github/tiagogodinho/mongoid-textile/badges/gpa.svg)](https://codeclimate.com/github/tiagogodinho/mongoid-textile)
 
 Textile texts directly from MongoDB.
 
@@ -45,7 +49,7 @@ article.text_formatted #=> <h1>Proud to be a rails developer</h1>
 
 ## Compatibility
 
-Mongoid Textile is tested against Ruby 1.9.3.
+Mongoid Textile is tested against Ruby 1.9.3, 2.0.0 and 2.1.0.
 
 ## Contributing
 
@@ -62,4 +66,4 @@ Mongoid Textile is tested against Ruby 1.9.3.
 
 ## License
 
-MIT License. Copyright 2012 Lucas Renan e Tiago Rafael Godinho
+MIT License. Copyright 2012-2014 Lucas Renan e Tiago Rafael Godinho
