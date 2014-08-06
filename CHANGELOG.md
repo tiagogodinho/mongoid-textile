@@ -1,3 +1,8 @@
+### 1.0.0 - August 5, 2014
+
+* Improvements
+  * Update dependencies.
+
 ### 0.2.0 - July 11, 2012
 
 * Improvements
