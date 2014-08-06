@@ -20,19 +20,23 @@ module Mongoid
           formatted_text = {}
 
           values.each do |key, value|
-            formatted_text[key.to_s] = RedCloth.new(value.to_s).to_html
+            formatted_text[key.to_s] = get_formatted_text(value)
           end
 
           self.send("#{textile_field_name}_translations=", formatted_text)
         else
           value = self.send(field_name)
-          formatted_text = RedCloth.new(value.to_s).to_html
+          formatted_text = get_formatted_text(value)
           self.send("#{textile_field_name}=", formatted_text)
         end
       end
     end
 
     private
+
+    def get_formatted_text(value)
+      RedCloth.new(value.to_s).to_html
+    end
 
     def textile_fields
       fields.collect{ |field| field.first }.select{ |field_name| field_name =~ /\w+_formatted/ }
